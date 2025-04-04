@@ -1,0 +1,45 @@
+[
+    {
+        "paths": [
+            "bin/contracts/accounts/SimpleAccount.abi",
+            "bin/contracts/accounts/SimpleAccountFactory.abi"
+        ],
+        "generatorConfigs": [
+            {
+                "baseNamespace": "Nethereum.AccountAbstraction.SimpleAccount",
+                "basePath": "../Nethereum/src/Nethereum.AccountAbstraction.SimpleAccount",
+                "codeGenLang": 0,
+                "generatorType": "ContractDefinition"
+            }
+        ]
+    },
+    {
+        "paths": [
+            "bin/contracts/core/EntryPoint.abi"
+        ],
+        "generatorConfigs": [
+            {
+                "baseNamespace": "Nethereum.AccountAbstraction",
+                "basePath": "../Nethereum/src/Nethereum.AccountAbstraction",
+                "codeGenLang": 0,
+                "generatorType": "ContractDefinition"
+            }
+        ]
+    },
+    {
+        "paths": [
+            "bin/contracts/test/TestExecAccountFactory.abi",
+            "bin/contracts/test/TestExecAccount.abi",
+            "bin/contracts/test/TestUtil.abi",
+            "bin/contracts/test/TestCounter.abi"   
+        ],
+        "generatorConfigs": [
+            {
+                "baseNamespace": "Nethereum.AccountAbstraction.IntegrationTests",
+                "basePath": "../Nethereum/tests/Nethereum.AccountAbstraction.IntegrationTests",
+                "codeGenLang": 0,
+                "generatorType": "ContractDefinition"
+            }
+        ]
+    }
+]

@@ -1,0 +1,572 @@
+{
+    "contractName": "TestUtil",
+    "abi": [
+        {
+            "inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "address",
+                            "name": "sender",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "nonce",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "bytes",
+                            "name": "initCode",
+                            "type": "bytes"
+                        },
+                        {
+                            "internalType": "bytes",
+                            "name": "callData",
+                            "type": "bytes"
+                        },
+                        {
+                            "internalType": "bytes32",
+                            "name": "accountGasLimits",
+                            "type": "bytes32"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "preVerificationGas",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "bytes32",
+                            "name": "gasFees",
+                            "type": "bytes32"
+                        },
+                        {
+                            "internalType": "bytes",
+                            "name": "paymasterAndData",
+                            "type": "bytes"
+                        },
+                        {
+                            "internalType": "bytes",
+                            "name": "signature",
+                            "type": "bytes"
+                        }
+                    ],
+                    "internalType": "struct PackedUserOperation",
+                    "name": "op",
+                    "type": "tuple"
+                }
+            ],
+            "name": "encodeUserOp",
+            "outputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "",
+                    "type": "bytes"
+                }
+            ],
+            "stateMutability": "pure",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "initCode",
+                    "type": "bytes"
+                }
+            ],
+            "name": "isEip7702InitCode",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "pure",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.29+commit.ab55807c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"nonce\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"initCode\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"callData\",\"type\":\"bytes\"},{\"internalType\":\"bytes32\",\"name\":\"accountGasLimits\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"preVerificationGas\",\"type\":\"uint256\"},{\"internalType\":\"bytes32\",\"name\":\"gasFees\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"paymasterAndData\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"signature\",\"type\":\"bytes\"}],\"internalType\":\"struct PackedUserOperation\",\"name\":\"op\",\"type\":\"tuple\"}],\"name\":\"encodeUserOp\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"initCode\",\"type\":\"bytes\"}],\"name\":\"isEip7702InitCode\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Users/SuperDev/Documents/Repos/account-abstraction/contracts/test/TestUtil.sol\":\"TestUtil\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"c:/Users/SuperDev/Documents/Repos/account-abstraction/contracts/core/Eip7702Support.sol\":{\"keccak256\":\"0x7acbe79be99b11e462da3c161a1bc9863eff8314cff1f542e561af14de2e3d41\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a5a2bac79c3ee81fc53def385e4c73c3820be565a1ef4e04456e07849399a341\",\"dweb:/ipfs/QmZAqoZgAJt4yrj7RXcV55edboR8jJ4JBgr7wLfRPtZCrz\"]},\"c:/Users/SuperDev/Documents/Repos/account-abstraction/contracts/core/Helpers.sol\":{\"keccak256\":\"0xb310f29da120341cb703a591bc0c94ae2329d391eeb18cf3b9679bbc45da0ece\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://193e652b6cac47388261f61f66f722363b8454c3f884cc2b6d113665f939e0a4\",\"dweb:/ipfs/QmfYJGvTcWGqQipV3cSdxWb5Yuf5UCXMY6QqgLpAsrmQsr\"]},\"c:/Users/SuperDev/Documents/Repos/account-abstraction/contracts/core/UserOperationLib.sol\":{\"keccak256\":\"0xca3cd518e94fbc8bf3ba680ab06dc30805aeb1b9004fd58ac4881576ca84a22f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cda10407811f2a6ee765ba0ee1a8b6deb2694a4aec6fb284b375d0ea987a86f2\",\"dweb:/ipfs/QmbURSVktADkHyGeueKEsYPHDopgqnSrKXvJJ3wwAAf8ka\"]},\"c:/Users/SuperDev/Documents/Repos/account-abstraction/contracts/interfaces/PackedUserOperation.sol\":{\"keccak256\":\"0xe2f47d598c66f1b9e619ff73f768f677bc4244e8a3d3441742a7a5188a3b4053\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d5159ad9e8ce8642cafd4f3cd77e522036f30478066604eadd11b344f0959029\",\"dweb:/ipfs/QmUXNkJ3bQSCXUqrGKpnnJipywJA1XDgYi6WGrVzznqRzH\"]},\"c:/Users/SuperDev/Documents/Repos/account-abstraction/contracts/test/TestUtil.sol\":{\"keccak256\":\"0xa0c41c42edd44ded758a98bf25c456cb55860f7489c64f90aa18d3eda7302f07\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://c8dcf7791bf78653fc7819aa60ff336642642f0b7a7f429d6d116fbb6df9113f\",\"dweb:/ipfs/QmeaLskJFt8C6ZYc4zr7pnRVusSwwB8WKSsKKDUng3irhq\"]}},\"version\":1}",
+    "bytecode": "6080806040523460155761028c908161001a8239f35b5f80fdfe6080806040526004361015610012575f80fd5b5f3560e01c9081632d9bd99b14610197575063a124062e14610032575f80fd5b346101935760203660031901126101935760043567ffffffffffffffff8111610193578060040161012060031983360301126101935780356001600160a01b03811691908290036101935760c461008c6044850183610223565b908160405191823720936100ba6100a66064830185610223565b9081604051918237209360e4830190610223565b908160405191823720926040519560208701957f29a0bca4af4be3421398da00295e58e6d7de38cb492214754cb6a47507dd6f8e8752604088015260248301356060880152608087015260a0860152608481013560c086015260a481013560e08601520135610100840152610120830152610120825261014082019180831067ffffffffffffffff84111761017f5761018090836040526020845280518093816101608401528383015e5f82848301015261013f1992601f8019910116810103010190f35b634e487b7160e01b5f52604160045260245ffd5b5f80fd5b34610193576020366003190112610193576004359067ffffffffffffffff821161019357366023830112156101935781600401359167ffffffffffffffff83116101935736602484830101116101935760209260246101f692016101fc565b15158152f35b9060021161021e57356bffffffffffffffffffffffff1916613b8160f11b1490565b505f90565b903590601e1981360301821215610193570180359067ffffffffffffffff8211610193576020019181360383136101935756fea2646970667358221220d6dd6404dd6b4ae17d6ae8c1548b36f8f2bda1ad31c5b9efd8f9c6bce5aa95cc64736f6c634300081d0033",
+    "deployedBytecode": "6080806040526004361015610012575f80fd5b5f3560e01c9081632d9bd99b14610197575063a124062e14610032575f80fd5b346101935760203660031901126101935760043567ffffffffffffffff8111610193578060040161012060031983360301126101935780356001600160a01b03811691908290036101935760c461008c6044850183610223565b908160405191823720936100ba6100a66064830185610223565b9081604051918237209360e4830190610223565b908160405191823720926040519560208701957f29a0bca4af4be3421398da00295e58e6d7de38cb492214754cb6a47507dd6f8e8752604088015260248301356060880152608087015260a0860152608481013560c086015260a481013560e08601520135610100840152610120830152610120825261014082019180831067ffffffffffffffff84111761017f5761018090836040526020845280518093816101608401528383015e5f82848301015261013f1992601f8019910116810103010190f35b634e487b7160e01b5f52604160045260245ffd5b5f80fd5b34610193576020366003190112610193576004359067ffffffffffffffff821161019357366023830112156101935781600401359167ffffffffffffffff83116101935736602484830101116101935760209260246101f692016101fc565b15158152f35b9060021161021e57356bffffffffffffffffffffffff1916613b8160f11b1490565b505f90565b903590601e1981360301821215610193570180359067ffffffffffffffff8211610193576020019181360383136101935756fea2646970667358221220d6dd6404dd6b4ae17d6ae8c1548b36f8f2bda1ad31c5b9efd8f9c6bce5aa95cc64736f6c634300081d0033",
+    "sourceMap": "154:370:4:-:0;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "154:370:4:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;154:370:4;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;154:370:4;;;;;;;;;2101:14:2;1865:15;;;;;;:::i;:::-;3382:198:1;;154:370:4;3382:198:1;;;;;1930:15:2;2172:23;1930:15;;;;;;:::i;:::-;3382:198:1;;154:370:4;3382:198:1;;;;;2172:23:2;;;;;;:::i;:::-;3382:198:1;;154:370:4;3382:198:1;;;;;154:370:4;;;2216:239:2;154:370:4;2216:239:2;;1097:199;;;;154:370:4;1097:199:2;;;1753:12;;;154:370:4;1930:15:2;1097:199;;;1984:23;1097:199;;;2047:25;1097:199;;;1984:23;;;154:370:4;2101:14:2;1097:199;;;2047:25;;;154:370:4;;1097:199:2;;;2101:14;154:370:4;1097:199:2;;;;154:370:4;1097:199:2;;;154:370:4;2216:239:2;;;1097:199;;;;;;154:370:4;1097:199:2;;;;;154:370:4;1097:199:2;;154:370:4;1097:199:2;154:370:4;;;;;;;;;;;;;;;;;;;;;;;;;2216:239:2;154:370:4;2216:239:2;;154:370:4;;;;;;;;;;1097:199:2;;;;154:370:4;1097:199:2;;154:370:4;1097:199:2;1753:12;154:370:4;1097:199:2;154:370:4;;;;;;;;;;-1:-1:-1;;154:370:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;470:43;154:370;;470:43;:::i;:::-;154:370;;;;;1599:564:0;;1716:1;-1:-1:-1;1694:64:0;;1910:97;-1:-1:-1;;458:6:0;-1:-1:-1;;;2106:49:0;;1599:564::o;1694:64::-;1734:12;154:370:4;1734:12:0;:::o;154:370:4:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+    "sourcePath": "c:/Users/SuperDev/Documents/Repos/account-abstraction/contracts/test/TestUtil.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.29+commit.ab55807c"
+    },
+    "ast": {
+        "absolutePath": "c:/Users/SuperDev/Documents/Repos/account-abstraction/contracts/test/TestUtil.sol",
+        "exportedSymbols": {
+            "Eip7702Support": [
+                138
+            ],
+            "PackedUserOperation": [
+                685
+            ],
+            "TestUtil": [
+                721
+            ],
+            "UserOperationLib": [
+                663
+            ],
+            "calldataKeccak": [
+                299
+            ],
+            "min": [
+                317
+            ]
+        },
+        "id": 722,
+        "license": "GPL-3.0",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 687,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".28"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "37:24:4"
+            },
+            {
+                "absolutePath": "c:/Users/SuperDev/Documents/Repos/account-abstraction/contracts/interfaces/PackedUserOperation.sol",
+                "file": "../interfaces/PackedUserOperation.sol",
+                "id": 688,
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "ImportDirective",
+                "scope": 722,
+                "sourceUnit": 686,
+                "src": "65:47:4",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "absolutePath": "c:/Users/SuperDev/Documents/Repos/account-abstraction/contracts/core/Eip7702Support.sol",
+                "file": "../core/Eip7702Support.sol",
+                "id": 689,
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "ImportDirective",
+                "scope": 722,
+                "sourceUnit": 139,
+                "src": "114:36:4",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "TestUtil",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 721,
+                "linearizedBaseContracts": [
+                    721
+                ],
+                "name": "TestUtil",
+                "nameLocation": "163:8:4",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "global": false,
+                        "id": 693,
+                        "libraryName": {
+                            "id": 690,
+                            "name": "UserOperationLib",
+                            "nameLocations": [
+                                "185:16:4"
+                            ],
+                            "nodeType": "IdentifierPath",
+                            "referencedDeclaration": 663,
+                            "src": "185:16:4"
+                        },
+                        "nodeType": "UsingForDirective",
+                        "src": "179:47:4",
+                        "typeName": {
+                            "id": 692,
+                            "nodeType": "UserDefinedTypeName",
+                            "pathNode": {
+                                "id": 691,
+                                "name": "PackedUserOperation",
+                                "nameLocations": [
+                                    "206:19:4"
+                                ],
+                                "nodeType": "IdentifierPath",
+                                "referencedDeclaration": 685,
+                                "src": "206:19:4"
+                            },
+                            "referencedDeclaration": 685,
+                            "src": "206:19:4",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_PackedUserOperation_$685_storage_ptr",
+                                "typeString": "struct PackedUserOperation"
+                            }
+                        }
+                    },
+                    {
+                        "body": {
+                            "id": 706,
+                            "nodeType": "Block",
+                            "src": "325:38:4",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "hexValue": "30",
+                                                "id": 703,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "number",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "353:1:4",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_rational_0_by_1",
+                                                    "typeString": "int_const 0"
+                                                },
+                                                "value": "0"
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_rational_0_by_1",
+                                                    "typeString": "int_const 0"
+                                                }
+                                            ],
+                                            "expression": {
+                                                "id": 701,
+                                                "name": "op",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 696,
+                                                "src": "343:2:4",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_PackedUserOperation_$685_calldata_ptr",
+                                                    "typeString": "struct PackedUserOperation calldata"
+                                                }
+                                            },
+                                            "id": 702,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberLocation": "346:6:4",
+                                            "memberName": "encode",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 453,
+                                            "src": "343:9:4",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_pure$_t_struct$_PackedUserOperation_$685_calldata_ptr_$_t_bytes32_$returns$_t_bytes_memory_ptr_$attached_to$_t_struct$_PackedUserOperation_$685_calldata_ptr_$",
+                                                "typeString": "function (struct PackedUserOperation calldata,bytes32) pure returns (bytes memory)"
+                                            }
+                                        },
+                                        "id": 704,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "nameLocations": [],
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "343:12:4",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bytes_memory_ptr",
+                                            "typeString": "bytes memory"
+                                        }
+                                    },
+                                    "functionReturnParameters": 700,
+                                    "id": 705,
+                                    "nodeType": "Return",
+                                    "src": "336:19:4"
+                                }
+                            ]
+                        },
+                        "functionSelector": "a124062e",
+                        "id": 707,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "encodeUserOp",
+                        "nameLocation": "243:12:4",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 697,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 696,
+                                    "mutability": "mutable",
+                                    "name": "op",
+                                    "nameLocation": "285:2:4",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 707,
+                                    "src": "256:31:4",
+                                    "stateVariable": false,
+                                    "storageLocation": "calldata",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_struct$_PackedUserOperation_$685_calldata_ptr",
+                                        "typeString": "struct PackedUserOperation"
+                                    },
+                                    "typeName": {
+                                        "id": 695,
+                                        "nodeType": "UserDefinedTypeName",
+                                        "pathNode": {
+                                            "id": 694,
+                                            "name": "PackedUserOperation",
+                                            "nameLocations": [
+                                                "256:19:4"
+                                            ],
+                                            "nodeType": "IdentifierPath",
+                                            "referencedDeclaration": 685,
+                                            "src": "256:19:4"
+                                        },
+                                        "referencedDeclaration": 685,
+                                        "src": "256:19:4",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_PackedUserOperation_$685_storage_ptr",
+                                            "typeString": "struct PackedUserOperation"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "255:33:4"
+                        },
+                        "returnParameters": {
+                            "id": 700,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 699,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 707,
+                                    "src": "312:12:4",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bytes_memory_ptr",
+                                        "typeString": "bytes"
+                                    },
+                                    "typeName": {
+                                        "id": 698,
+                                        "name": "bytes",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "312:5:4",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bytes_storage_ptr",
+                                            "typeString": "bytes"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "311:14:4"
+                        },
+                        "scope": 721,
+                        "src": "234:129:4",
+                        "stateMutability": "pure",
+                        "virtual": false,
+                        "visibility": "external"
+                    },
+                    {
+                        "body": {
+                            "id": 719,
+                            "nodeType": "Block",
+                            "src": "452:69:4",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "id": 716,
+                                                "name": "initCode",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 709,
+                                                "src": "504:8:4",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bytes_calldata_ptr",
+                                                    "typeString": "bytes calldata"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_bytes_calldata_ptr",
+                                                    "typeString": "bytes calldata"
+                                                }
+                                            ],
+                                            "expression": {
+                                                "id": 714,
+                                                "name": "Eip7702Support",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 138,
+                                                "src": "470:14:4",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_type$_t_contract$_Eip7702Support_$138_$",
+                                                    "typeString": "type(library Eip7702Support)"
+                                                }
+                                            },
+                                            "id": 715,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberLocation": "485:18:4",
+                                            "memberName": "_isEip7702InitCode",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 93,
+                                            "src": "470:33:4",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_pure$_t_bytes_calldata_ptr_$returns$_t_bool_$",
+                                                "typeString": "function (bytes calldata) pure returns (bool)"
+                                            }
+                                        },
+                                        "id": 717,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "nameLocations": [],
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "470:43:4",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "functionReturnParameters": 713,
+                                    "id": 718,
+                                    "nodeType": "Return",
+                                    "src": "463:50:4"
+                                }
+                            ]
+                        },
+                        "functionSelector": "2d9bd99b",
+                        "id": 720,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "isEip7702InitCode",
+                        "nameLocation": "380:17:4",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 710,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 709,
+                                    "mutability": "mutable",
+                                    "name": "initCode",
+                                    "nameLocation": "413:8:4",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 720,
+                                    "src": "398:23:4",
+                                    "stateVariable": false,
+                                    "storageLocation": "calldata",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bytes_calldata_ptr",
+                                        "typeString": "bytes"
+                                    },
+                                    "typeName": {
+                                        "id": 708,
+                                        "name": "bytes",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "398:5:4",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bytes_storage_ptr",
+                                            "typeString": "bytes"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "397:25:4"
+                        },
+                        "returnParameters": {
+                            "id": 713,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 712,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 720,
+                                    "src": "446:4:4",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bool",
+                                        "typeString": "bool"
+                                    },
+                                    "typeName": {
+                                        "id": 711,
+                                        "name": "bool",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "446:4:4",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "445:6:4"
+                        },
+                        "scope": 721,
+                        "src": "371:150:4",
+                        "stateMutability": "pure",
+                        "virtual": false,
+                        "visibility": "external"
+                    }
+                ],
+                "scope": 722,
+                "src": "154:370:4",
+                "usedErrors": [],
+                "usedEvents": []
+            }
+        ],
+        "src": "37:489:4"
+    },
+    "functionHashes": {
+        "encodeUserOp((address,uint256,bytes,bytes,bytes32,uint256,bytes32,bytes,bytes))": "a124062e",
+        "isEip7702InitCode(bytes)": "2d9bd99b"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "130400",
+            "executionCost": "184",
+            "totalCost": "130584"
+        },
+        "external": {
+            "encodeUserOp((address,uint256,bytes,bytes,bytes32,uint256,bytes32,bytes,bytes))": "infinite",
+            "isEip7702InitCode(bytes)": "365"
+        }
+    }
+}
